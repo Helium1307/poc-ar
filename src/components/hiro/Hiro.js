@@ -4,7 +4,10 @@ import { AFrameRenderer, Marker } from "react-web-ar";
 function Hiro() {
   return (
     <AFrameRenderer
-      arToolKit={{ sourceType: "image", sourceUrl: "./images/hiro_marker.png" }}
+      arToolKit={{
+        sourceType: "webcam",
+        sourceUrl: "./images/hiro_marker.png",
+      }}
       stats
     >
       <Marker parameters={{ preset: "hiro" }}>
