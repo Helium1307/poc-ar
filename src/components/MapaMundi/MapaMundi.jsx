@@ -7,7 +7,7 @@ function MapaMundi() {
     <AFrameRenderer
       arToolKit={{
         sourceType: "webcam",
-        sourceUrl: "./images/hiro_marker.png",
+        sourceUrl: "./mapa_mundi.jpg",
       }}
     >
       <Marker parameters={{ preset: "hiro" }}>
