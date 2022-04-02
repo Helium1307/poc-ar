@@ -4,7 +4,7 @@ import MapaMundi from "./components/MapaMundi/MapaMundi";
 function App() {
   return (
     <div className="App">
-      <MapaMundi />
+      <Hiro />
     </div>
   );
 }

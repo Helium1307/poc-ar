@@ -6,23 +6,25 @@ function MapaMundi() {
   return (
     <AFrameRenderer
       arToolKit={{
-        sourceType: "webcam",
-        sourceUrl: "./pattern-mapa_mundi.png",
+        sourceType: "image",
+        sourceUrl: "./hiro.png",
       }}
     >
       <Marker parameters={{ preset: "hiro" }}>
-        <a-assets-item img id="mundiMap" src={mapaMundiImage} />
-
-        <a-sphere src="#mundiMap" radius="1" segments-height="53">
+        <a-box
+          color="pink"
+          material="opacity: 1;"
+          position="0 0.003 0"
+          scale="0.4 0.4 0.4"
+        >
           <a-animation
             attribute="rotation"
-            dur="1000"
-            from="1 -90 90"
-            to="360 -90 90"
+            to="360 0 0"
+            dur="5000"
             easing="linear"
             repeat="indefinite"
           />
-        </a-sphere>
+        </a-box>
       </Marker>
     </AFrameRenderer>
   );
