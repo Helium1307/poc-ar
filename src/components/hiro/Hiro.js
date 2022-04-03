@@ -3,17 +3,23 @@ import { AFrameRenderer, Marker } from "react-web-ar";
 
 function Hiro() {
   return (
-    <AFrameRenderer inherent={true}>
+    <AFrameRenderer
+      inherent={true}
+      arToolKit={{
+        sourceType: "webcam",
+      }}
+    >
+      <a-assets-item
+        id="modelo"
+        src="../../assets/modelo3d.gltf"
+      ></a-assets-item>
       <Marker parameters={{ preset: "hiro" }}>
-        <a-box color="blue" position="0 0.09 0" scale="0.4 0.8 0.8">
-          <a-animation
-            attribute="rotation"
-            to="360 0 0"
-            dur="2000"
-            easing="linear"
-            repeat="indefinite"
-          />
-        </a-box>
+        <a-entity
+          id="modelo3D"
+          position="0 0 0"
+          scale="0.05 0.05 0.05"
+          gltf-model="#modelo"
+        ></a-entity>
       </Marker>
     </AFrameRenderer>
   );
