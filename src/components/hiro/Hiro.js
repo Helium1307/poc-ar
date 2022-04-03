@@ -14,12 +14,7 @@ function Hiro() {
         src="../../assets/modelo3d.gltf"
       ></a-assets-item>
       <Marker parameters={{ preset: "hiro" }}>
-        <a-entity
-          id="modelo3D"
-          position="0 0 0"
-          scale="0.05 0.05 0.05"
-          gltf-model="#modelo"
-        ></a-entity>
+        <a-entity geometry="primitive: box" material="color: red"></a-entity>
       </Marker>
     </AFrameRenderer>
   );
