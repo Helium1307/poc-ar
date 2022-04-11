@@ -1,6 +1,6 @@
 import React from "react";
 import { AFrameRenderer, Marker } from "react-web-ar";
-
+// https://cdn.glitch.com/d035a109-3c17-4c09-a808-395f69b2e93b%2Fmodelo3d.gltf?v=1587326228301
 function Hiro() {
   return (
     <AFrameRenderer
@@ -21,7 +21,7 @@ function Hiro() {
           position="0 0 0"
           rotation="-90 0 0"
           scale="0.05 0.05 0.05"
-          gltf-model="url(https://cdn.glitch.com/d035a109-3c17-4c09-a808-395f69b2e93b%2Fmodelo3d.gltf?v=1587326228301)"
+          gltf-model="url(https://raw.githack.com/Helium1307/poc-ar/master/src/assets/modelo.gltf)"
         ></a-entity>
         {/* <a-entity geometry="primitive: box" material="color: red"></a-entity>
         <a-entity
