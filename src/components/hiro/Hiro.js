@@ -1,6 +1,8 @@
 import React from "react";
 import { AFrameRenderer, Marker } from "react-web-ar";
 // https://cdn.glitch.com/d035a109-3c17-4c09-a808-395f69b2e93b%2Fmodelo3d.gltf?v=1587326228301
+/*obj-model="obj: url(https://rishavjayswal.github.io/augmented-reality/resources/couch.obj); 
+mtl: url(https://rishavjayswal.github.io/augmented-reality/resources/couch.mtl)" */
 function Hiro() {
   return (
     <AFrameRenderer
