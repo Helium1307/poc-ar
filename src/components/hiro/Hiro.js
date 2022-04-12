@@ -22,7 +22,14 @@ function Hiro() {
           
         ></a-asset-item>
       </a-assets> */}
-      <Marker parameters={{ preset: "hiro" }}>
+      <a-nft
+        type="nft"
+        smooth="true"
+        smoothCount="10"
+        smoothTolerance=".01"
+        smoothThreshold="5"
+        url="../../assets/helicoptero"
+      >
         <a-entity
           id="modelo3D"
           position="0 0 0"
@@ -30,12 +37,12 @@ function Hiro() {
           scale="0.05 0.05 0.05"
           gltf-model={Modelo}
         ></a-entity>
-        {/* <a-entity geometry="primitive: box" material="color: red"></a-entity>
+      </a-nft>
+      {/* <a-entity geometry="primitive: box" material="color: red"></a-entity>
         <a-entity
           geometry="primitive: circle"
           material="color: blue"
         ></a-entity> */}
-      </Marker>
     </AFrameRenderer>
   );
 }
